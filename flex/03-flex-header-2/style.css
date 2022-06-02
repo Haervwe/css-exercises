@@ -48,6 +48,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex: 0 1 auto;
+  gap: 10px;
+  padding: 16px;
 } 
 
 .right, .left {
