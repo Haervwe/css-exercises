@@ -5,10 +5,86 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  text-justify: center;
+  color: #000;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  flex: 1 1 1;
+  justify-content: space-between;
+}
+
+.left-links, .right-links {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  gap: 20px;
+  padding: 10px;
+  
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer {
+  display: flex;
+  height: 50px; 
+  flex: 1 1 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex: 1 1 auto;
+  
+  
+
 }
 
 img {
   width: 600px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 1;
+  gap: 10px;
 }
 
 button {
@@ -16,6 +92,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
