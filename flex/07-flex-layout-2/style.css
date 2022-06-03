@@ -23,31 +23,41 @@ li {
 
 .header {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
   height: 72px;
+  min-height: 72px;
   font-weight: 900;
   background: darkmagenta;
   color: white;
   font-size: 32px;
-  align-content: center;
-  justify-content: left;
-  flex: 1 1 auto;
-  padding: 10px;
+  flex: 1 1 1;
+  padding: 16px;
+
+  
 }
-.texto  {
+.texto h1  {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  text-justify: left;
-  flex: 0 1 1;
-  padding: 0px;
+  height: 72px;
+  justify-content: flex-start;
+  flex: 1 1 1 ;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  flex: 1 1 0;
+  flex: 1 0 0;
   
+}
+
+.sidebar {
+  display: flex;
+  min-width: 300px;
+  width: 300px;
+  background: royalblue;
+  padding: 16px;
+  flex: 1 1 1;
 }
 
 .content {
@@ -55,10 +65,10 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 1 0;
-  gap: 15px;
+  gap: 24px;
   padding: 20px;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   
 }
 
@@ -76,17 +86,17 @@ li {
 }
 
 .footer {
+  display: flex;
   height: 72px;
+  min-height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 1;
 }
 
-.sidebar {
-  display: flex;
-  width: 300px;
-  background: royalblue;
-  flex: 1 0 1;
-}
+
 
 .card {
   border: 1px solid #eee;
